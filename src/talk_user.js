@@ -65,7 +65,7 @@ var ajax = ajaxObject();
    <a href="javascript:hpp_loadmore('${id}','${domain}',${limit})" class="hppt_button_nextpage">下一页</a>
   <\/div>`
             console.log("OK");
-			console.log(ajax.responseText);
+// 			console.log(ajax.responseText);
 			let res=JSON.parse(ajax.responseText)
 			document.getElementById("hpp_talk_list").innerHTML=``;
 			for(var i=0;i<getJsonLength(res);i++){
